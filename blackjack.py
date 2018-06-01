@@ -48,6 +48,8 @@ def new_hands():
             #print(player_hand)
             i = i+1
         player_hands.append(newhand)
+        newhand = []
+        i = 0
     return(player_hands)
         
 #for i in new_hand():
@@ -87,7 +89,7 @@ def start():
 new_hands()
 addcards()
 #random comment
-print(player_hands)
+#print(player_hands)
 
 
 
