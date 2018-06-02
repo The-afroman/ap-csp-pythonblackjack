@@ -57,7 +57,7 @@ def new_hands():
 
 def players():
     player = int(input("how many players? -> "))
-    if(player > 10):
+    while(player > 10):
         player = int(input("Too many players :( try again -> "))
     playerlist = range(0,player)
     return(playerlist)
