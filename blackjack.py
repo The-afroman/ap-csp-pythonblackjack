@@ -57,7 +57,8 @@ def new_hands():
 
 def players():
     player = int(input("how many players? -> "))
-    #if(players > )
+    if(players > 10):
+        player = int(input("Too many players :( try again -> "))
     playerlist = range(0,player)
     return(playerlist)
     
@@ -72,7 +73,6 @@ def addcards():
         for x in i:
             newdeck.append(str(x))
         plyr_hit = input('player '+str(pl)+' your deck: '+str(newdeck) +' do you want to hit? y/n ->')
-        
         if(plyr_hit == 'y' or plyr_hit == 'yes'):
             i = player_hands[n] + [deck.deck[0]]
             del(deck.deck[0])
