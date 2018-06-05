@@ -66,24 +66,25 @@ def players():
 #print(new_hand())
 
 def addcards():
-    n = 0
     pl = 1
     for i in player_hands:
         newdeck=[]
         for x in i:
             newdeck.append(str(x))
         plyr_hit = input('player '+str(pl)+' your deck: '+str(newdeck) +' do you want to hit? y/n ->')
-        if(plyr_hit == 'y' or plyr_hit == 'yes'):
-            i = player_hands[n] + [deck.deck[0]]
+        plyr_hit = plyr_hit.lower()
+        while plyr_hit == 'y' or plyr_hit == 'yes':
+            i = i + [deck.deck[0]]
             del(deck.deck[0])
             newdeck = []
-            pl = pl+1
-            n = n+1 
             for x in i:
                 newdeck.append(str(x))
-            input('your deck: '+str(newdeck)+\
-                ' __press any key__' )
+            print(i)
+            plyr_hit = input('your deck: '+str(newdeck)+\
+                ' would you like to hit again? ' )
             os.system('clear')
+            
+        pl = pl+1
 def start():
     print("Blackish Jack - by:Faris Hijazi, Noah Boihem")
     while(gamestatus == True):
