@@ -1,3 +1,5 @@
+# disclaimer too much time was spent on this terrible game
+# you should probably just play with real cards or something
 import random
 import os
 from random import shuffle
@@ -61,7 +63,7 @@ def new_hands():
     return(player_hands)
         
 #for i in new_hand():
-#   print(i)
+#print(i)
 
 def players():
     global playerlist
@@ -109,7 +111,7 @@ def addcards():
                 input('your deck: '+str(newdeck)+', You have busted press any key to continue')
         clear_screen()
         pl = pl+1
-        
+
 def winner():
     for n, i in enumerate(player_hands):
         for num, x in enumerate(i): 
@@ -160,8 +162,6 @@ def start():
         play_again()
 
 start()
-
-
 
 
 
