@@ -111,6 +111,8 @@ def addcards():
                 input('your deck: '+str(newdeck)+', You have busted press any key to continue')
         clear_screen()
         pl = pl+1
+        input('press ENTER to continue')
+        clear_screen()
 
 def winner():
     for n, i in enumerate(player_hands):
@@ -139,15 +141,14 @@ def winner():
 def play_again():
     global gamestatus
     placeholder = input('would you like to play again? y/n -> ')
-    placeholder = placeholder.lower
     if placeholder == 'y' or placeholder == 'yes':
         gamestatus = True
     else: 
         gamestatus = False
 
 def start():
-    input("Blackish Jack - by:Faris Hijazi, Noah Boihem"+\
-                " PRESS ANY KEY TO CONTINUE")
+    input("Blackish Jack - by:Faris Hijazi, Noah Boihem ----- "+\
+                " press ENTER to continue")
 
     while(gamestatus == True):
         #main loop
