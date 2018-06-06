@@ -3,7 +3,7 @@
 Basic cli blackjack game, you can play with up to 10 players localy. To play you will need to have python installed on you computer, then navigate to the directory of the saved .py file and use the command 'python blackjack.py'
 #
 #
-#Rules:
+# Rules:
     all face cards = 10
 
     ace = 11
