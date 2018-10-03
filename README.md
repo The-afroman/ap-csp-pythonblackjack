@@ -10,7 +10,7 @@ Basic cli blackjack game, you can play with up to 10 players localy. To play you
 
     other cards = respective number values
 
-    win automaticly if the sum of cards in your deck is = to 21
+    win automatically if the sum of cards in your deck is = to 21
 
     win if the sum of all cards in your deck is the greatest out of all other player decks without exceeding 21
 
