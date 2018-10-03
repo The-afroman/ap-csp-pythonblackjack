@@ -23,7 +23,7 @@ class Deck():
         self.deck = []
         for suit in suits:
             for ctype in cardtype:
-                # instaciated card class
+                # instantiated card class
                 # deck made up of 52 unique instances of card class
                 self.deck.append(Card(suit,ctype))
     # special method used to call object as a string
